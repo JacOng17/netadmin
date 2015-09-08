@@ -1,0 +1,16 @@
+$ORIGIN .
+$TTL 10800	; 3 hours
+5.16.172.in-addr.arpa	IN SOA	ns.foo.org.nz. ongs2.student.op.ac.nz. (
+				20150827   ; serial
+				10800      ; refresh (3 hours)
+				3600       ; retry (1 hour)
+				259200     ; expire (3 days)
+				3600       ; minimum (1 hour)
+				)
+			NS	ns.foo.org.nz.
+			NS	ns1.foo.org.nz.
+$ORIGIN 5.16.172.in-addr.arpa.
+$TTL 900	; 15 minutes
+126			PTR	win-client.foo.org.nz.
+$TTL 10800	; 3 hours
+13			PTR	bsd-server.foo.org.nz.
